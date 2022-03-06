@@ -12,18 +12,23 @@ docker image pull ddosify/ddosify
 ## Usage
 
 Make scripts executable
-```
+```bash
 chmod +x bomber.sh
 chmod +x stop_bomber.sh
 ```
 
 Example
-```
-./bomber -t bomber.com -p 443 -c 10
+```bash
+./bomber -t bomber.com -p HTTP -c 10
 ```
 
 | Flag | Description | Type |
 | ---- | ----------- | ---- |
 | `-t` | Target site URL | `string` |
-| `-p` | Protocol - HTTP or HTTPS | `string` |
+| `-p` | Protocol: HTTP or HTTPS | `string` |
 | `-c` | Count of docker instances | `int` |
+
+Stop all containers
+```bash
+./stop_bomber.sh
+```
