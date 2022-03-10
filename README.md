@@ -1,4 +1,4 @@
-# Script that allows to run multiple container of ddosify
+# Script that allows to run multiple container of [ddosify](https://github.com/ddosify/ddosify)
 
 ## Dependencies
 
